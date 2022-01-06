@@ -9,11 +9,31 @@ a {
   text-decoration: none;
 }
 
+header,
+nav,
+h2,
+.main-visual,
+footer {
+  font-family: Chalkduster, "Bradly Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative; /* #socialの基準位置を相対位置へ変更する。 */
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.social {
+  position: absolute; /*headerの左上を基準に絶対位置で指定する*/
+  top: 22px; /* headerの左上から２２px下側へ移動 */
+  right: 22px; /* headerの右上から２２px左側へ移動する */
 }
 
 header .heading {
